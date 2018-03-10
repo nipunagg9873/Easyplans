@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/list_items_settlements_membername"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:text="TextView"
+        android:layout_weight="0.56" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="RS."
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/list_items_settlements_amount"
+        android:layout_width="60dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:layout_weight="0.35" />
+
+
+</LinearLayout>

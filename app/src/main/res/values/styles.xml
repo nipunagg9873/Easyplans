@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/text</item>
+
+    </style>
+    <style name="addcontacts" parent="AppTheme">
+        <item name="android:background">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/text</item>
+
+    </style>
+    <style name="parentcontainer" parent="AppTheme">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+    <style name="textviews" parent="AppTheme">
+        <item name="android:background">@color/background</item>
+        <item name="android:elevation">3dp</item>
+    </style>
+
+
+</resources>

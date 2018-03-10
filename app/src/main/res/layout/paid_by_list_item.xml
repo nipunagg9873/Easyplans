@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/paid_by_list_item_parent_container">
+<TextView
+    android:layout_width="fill_parent"
+    android:id="@+id/paid_by_list_item_name"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:textSize="20sp"
+    android:layout_toStartOf="@+id/textView9" />
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Rs."
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/paid_by_list_item_amount" />
+
+    <TextView
+        android:id="@+id/paid_by_list_item_amount"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:text="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

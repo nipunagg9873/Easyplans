@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_contacts_list_item_name"
+    style="@style/addcontacts"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:layout_margin="5dp"
+    android:checked="false"
+    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+    android:textSize="20sp">
+
+</CheckedTextView>

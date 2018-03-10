@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="81dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="26dp"
+                android:text="@string/name"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <DatePicker
+                android:layout_width="251dp"
+                android:layout_height="80dp"
+                android:textSize="18dp"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_marginTop="11dp"
+                app:layout_constraintTop_toBottomOf="@+id/add_plan_name"
+                android:layout_marginLeft="-3dp"
+                app:layout_constraintLeft_toLeftOf="@+id/add_plan_name"
+                android:id="@+id/add_plan_date"></DatePicker>
+            <EditText
+                android:id="@+id/add_plan_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:text=""
+                android:inputType="textPersonName"
+                app:layout_constraintHorizontal_bias="0.351"
+                app:layout_constraintLeft_toRightOf="@+id/name"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/add_plan_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/date"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/add_plan_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:text="@string/members"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/add_plan_date_text"
+                android:layout_marginLeft="0dp" />
+
+            <Button
+                android:id="@+id/add_member_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63dp"
+                android:layout_marginStart="61dp"
+                android:onClick="add_member_clicked"
+                android:text="@string/add_member"
+                app:layout_constraintLeft_toRightOf="@+id/add_plan_members"
+                android:layout_marginTop="34dp"
+                app:layout_constraintTop_toBottomOf="@+id/add_plan_date" />
+
+
+    <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Submit"
+                android:onClick="submitclicked"
+        android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/add_plan_member_list"
+        app:layout_constraintHorizontal_bias="0.925" />
+
+    <ListView
+        android:id="@+id/add_plan_member_list"
+        android:layout_width="314dp"
+        android:layout_height="174dp"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="29dp"
+        android:isScrollContainer="true"
+        app:layout_constraintLeft_toLeftOf="@+id/add_plan_members"
+        app:layout_constraintTop_toBottomOf="@+id/add_member_button"></ListView>
+
+    <TextView
+        android:id="@+id/add_plan_no_of_mems"
+        android:layout_width="199dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_plan_member_list"
+        app:layout_constraintVertical_bias="0.457" />
+
+
+</android.support.constraint.ConstraintLayout>

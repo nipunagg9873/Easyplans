@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/plan_members_dets_list_item_name"
+        android:layout_width="392dp"
+        android:layout_height="40dp"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="TextView"
+        android:layout_weight="0.02" />

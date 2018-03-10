@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/parentcontainer"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/plan_name"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        style="@style/textviews"
+        android:textSize="20sp"
+        android:layout_marginLeft="26dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--/--/--"
+        android:textSize="20sp"
+        android:textColor="@color/background"
+        android:elevation="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="271dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/plan_dets_plan_members"
+        android:layout_width="320dp"
+        android:layout_height="95dp"
+        android:layout_column="0"
+        style="@style/textviews"
+        android:layout_row="1"
+        android:gravity="center"
+        android:onClick="members_clicked"
+        android:text="@string/members"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@+id/plan_name"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/plan_dets_activities"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/plan_dets_photos"
+        android:layout_width="155dp"
+        android:layout_height="100dp"
+        android:layout_column="0"
+        android:onClick="photos_clicked"
+        android:gravity="center"
+        style="@style/textviews"
+        android:text="@string/photos"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/plan_name"
+        app:layout_constraintLeft_toRightOf="@+id/plan_dets_activities"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/plan_dets_activities"
+        android:layout_width="155dp"
+        android:layout_height="100dp"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:gravity="center"
+        android:onClick="activities_clicked"
+        style="@style/textviews"
+        android:text="@string/activities"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@+id/plan_name"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/plan_name"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/plan_dets_settlements"
+        android:layout_width="320dp"
+        android:layout_height="98dp"
+        android:layout_column="0"
+        android:layout_row="4"
+        style="@style/textviews"
+        android:gravity="center"
+        android:text="@string/settlements"
+        android:textSize="30sp"
+        android:onClick="settlements_clicked"
+        app:layout_constraintLeft_toLeftOf="@+id/plan_name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/plan_dets_plan_members"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/plan_dets_add_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_activity"
+        android:layout_marginLeft="236dp"
+        android:elevation="5dp"
+        android:onClick="add_activity_clicked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="447dp"
+        android:layout_marginStart="230dp" />
+
+
+</android.support.constraint.ConstraintLayout>
